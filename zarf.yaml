@@ -138,15 +138,13 @@ components:
 
   - name: metallb
     description: "Load balancer for balancing loads"
-    required: false
-    charts:
-      - name: metallb
-        releaseName: metallb
-        namespace: metallb
-        url: https://metallb.github.io/metallb
-        version: "0.13.5"
-        valuesFiles:
-          - manifests/metallb.yaml
+    required: true
+    repos: 
+      - https://github.com/metallb/metallb.git@0.13.7
     images:
-      - quay.io/metallb/speaker:v0.13.5
-      - quay.io/metallb/controller:v0.13.5
+      - quay.io/metallb/speaker:v0.13.7
+      - quay.io/metallb/controller:v0.13.7
+    manifests:
+      - name: metallb
+        files:
+          - manifests/metallb.yaml
