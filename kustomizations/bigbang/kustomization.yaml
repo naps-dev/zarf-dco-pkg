@@ -7,6 +7,3 @@ configMapGenerator:
     behavior: merge
     files:
       - values.yaml
-
-# patchesStrategicMerge:
-#   - environment-bb.enc.yaml

@@ -13,6 +13,13 @@ metadata:
   labels:
     istio-injection: disabled
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: metallb
+  labels:
+    istio-injection: disabled
+---
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
