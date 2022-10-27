@@ -8,12 +8,12 @@ metadata:
 variables:
   # Prompt user for the domain override
   - name: DOMAIN
-    default: "dco.bigbang.dev"
+    default: "bigbang.dev"
     prompt: false
   
-  - name: BRANCH
-    default: "main"
-    prompt: true
+  # - name: BRANCH
+  #   default: "main"
+  #   prompt: true
 
 components:
   - name: flux
