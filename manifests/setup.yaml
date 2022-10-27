@@ -20,7 +20,7 @@ metadata:
 #   labels:
 #     istio-injection: disabled
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
   name: zarf-cd-pkg
@@ -29,5 +29,4 @@ spec:
   interval: 1m
   url: https://github.com/naps-dev/zarf-dco-pkg.git
   ref:
-    branch: "feature/pkg"
-#    branch: "###ZARF_VAR_BRANCH###"
+    branch: feature/pkg
