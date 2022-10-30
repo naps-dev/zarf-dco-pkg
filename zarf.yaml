@@ -82,7 +82,7 @@ components:
 
       # logging
       - "registry1.dso.mil/ironbank/elastic/kibana/kibana:8.2.3"
-      - "registry1.dso.mil/ironbank/elastic/elasticsearch/elasticsearch8.2.3"
+      - "registry1.dso.mil/ironbank/elastic/elasticsearch/elasticsearch:8.2.3"
       - "registry1.dso.mil/ironbank/big-bang/base:2.0.0"
       - "registry1.dso.mil/ironbank/elastic/eck-operator/eck-operator:2.3.0"
       - "registry1.dso.mil/ironbank/opensource/fluent/fluent-bit:1.9.6"
