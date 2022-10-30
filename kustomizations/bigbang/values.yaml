@@ -156,16 +156,31 @@ gatekeeper:
 
 # EFK -> PLG, see https://repo1.dso.mil/platform-one/big-bang/bigbang/-/blob/1.39.0/docs/guides/using-bigbang/efk-plg-logging-migration.md
 logging:
-  enabled: false
+  enabled: true
+  values:
+    elasticsearch:
+      master:
+        persistence:
+          storageClassName: "local-path"
+      data:
+        persistence:
+          storageClassName: "local-path"
+      ingest:
+        persistence:
+          storageClassName: "local-path"
+      ml:
+        persistence:
+          storageClassName: "local-path"
+    
 eckoperator:
-  enabled: false
+  enabled: true
 fluentbit:
-  enabled: false
+  enabled: true
 jaeger:
-  enabled: false
+  enabled: true
 loki:
-  enabled: true
+  enabled: false
 promtail:
-  enabled: true
+  enabled: false
 tempo:
-  enabled: true
+  enabled: false
