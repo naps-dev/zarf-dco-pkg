@@ -64,7 +64,7 @@ This is a simple Defensive Cyber Operations (CDO) package created with Zarf.
     bind-address: "192.168.1.73"
     write-kubeconfig-mode: "0644"
     disable: 
-      - "traefik"
+      - "rke2-ingress-nginx"
     EOF
     ```
 1. Install and start RKE2
@@ -78,7 +78,7 @@ This is a simple Defensive Cyber Operations (CDO) package created with Zarf.
 1. Grab the config file
     ```bash
     # Run on workstation
-    scp [user]@[server]:/etc/rancher/k3s/k3s.yaml ~/.kube/config
+    scp [user]@[server]:/etc/rancher/rke2/rke2.yaml ~/.kube/config
     ```
 1. Install local path provisioner
    ```bash
